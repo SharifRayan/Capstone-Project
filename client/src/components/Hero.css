@@ -1,0 +1,98 @@
+.bubble-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bubble {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  animation: animate 6s linear infinite;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+
+.bubble:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation-duration: 10s;
+}
+
+.bubble:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation-duration: 3s;
+}
+
+.bubble:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation-duration: 7s;
+}
+
+.bubble:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation-duration: 9s;
+}
+
+.bubble:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation-duration: 5s;
+}
+
+.bubble:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation-duration: 10s;
+}
+
+.bubble:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation-duration: 6s;
+}
+
+.bubble:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation-duration: 10s;
+}
+
+/* Add more bubbles as needed */

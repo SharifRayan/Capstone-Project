@@ -1,0 +1,117 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 128px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+
+/* Common styles for both left and right items */
+.itemLeft,
+.itemRight {
+  width: 200px; /* width of each item */
+  height: 200px; /* adjusted height for better image display */
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  background-size: cover; /* Cover the area of the div without distorting image aspect ratio */
+  background-position: center; /* Center the image within the div */
+}
+
+/* Specific background images for each item */
+.itemLeft.item1,
+.itemRight.item1 {
+  background-image: url("../assets/1.png");
+}
+.itemLeft.item2,
+.itemRight.item2 {
+  background-image: url("../assets/2.png");
+}
+.itemLeft.item3,
+.itemRight.item3 {
+  background-image: url("../assets/3.png");
+}
+.itemLeft.item4,
+.itemRight.item4 {
+  background-image: url("../assets/4.png");
+}
+.itemLeft.item5,
+.itemRight.item5 {
+  background-image: url("../assets/5.png");
+}
+
+.itemLeft {
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+}
+
+.itemRight {
+  right: max(calc(200px * 8), calc(100% + 200px));
+  animation-name: scrollRight;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}

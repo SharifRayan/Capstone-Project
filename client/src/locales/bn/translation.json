@@ -1,0 +1,67 @@
+{
+  "navBar": {
+    "logout": "Logout",
+    "search": "Search",
+    "request": "Request",
+    "login": "Login",
+    "register": "Register"
+  },
+  "heroSection": {
+    "title": "Join the Fight: Blood Donation in Bangladesh",
+    "getStarted": "Get Started",
+    "downloadApp": "Download App",
+    "whyBloodDonationMatters": "Why Blood Donation Matters",
+    "description": "In Bangladesh, every drop of blood counts. Your donation can save lives, especially during emergencies or for patients in need. Join us in this noble cause and make a difference in your community. Together, we can ensure that no one is deprived of life-saving blood."
+  },
+  "blogComponent": {
+    "title": "Blood Donation in Bangladesh",
+    "description": "Join the cause and save lives through blood donation.",
+    "categories": {
+      "awareness": "Blood Donation Awareness",
+      "communityInitiatives": "Community Initiatives",
+      "personalStories": "Personal Stories"
+    },
+
+    "blogs": {
+      "blog1": {
+        "title": "Why Every Drop Counts: Blood Donation in Bangladesh",
+        "author": "Dr. Ayesha Rahman",
+        "readTime": "5 mins read"
+      },
+      "blog2": {
+        "title": "Upcoming Blood Donation Drive in Dhaka",
+        "author": "Fatema Nasrin",
+        "readTime": "4 mins read"
+      },
+      "blog3": {
+        "title": "Heartfelt Stories from Blood Donors in Bangladesh",
+        "author": "Rina Ahmed",
+        "readTime": "6 mins read"
+      }
+    },
+    "viewMore": "View More"
+  },
+  "factsComponent": {
+    "title": "Blood Donation in Bangladesh",
+    "description": "Every donation saves lives. Here are some key statistics on blood donation efforts in Bangladesh.",
+    "facts": {
+      "bloodBanks": "Blood Banks",
+      "annualDonations": "Annual Blood Donations",
+      "livesSaved": "Lives Saved Annually",
+      "voluntaryDonors": "Voluntary Donors"
+    }
+  },
+  "bloodDonorsComponent": {
+    "title": "Blood Donors"
+  },
+  "bloodPointsComponent": {
+    "title": "Donate Blood, Save Lives in Bangladesh",
+    "points": {
+      "thousandsDaily": "Thousands in need daily",
+      "safeProcess": "Safe and easy process",
+      "regularCamps": "Regular blood camps",
+      "makeDifference": "Make a difference today"
+    },
+    "becomeDonor": "Become a Donor"
+  }
+}
