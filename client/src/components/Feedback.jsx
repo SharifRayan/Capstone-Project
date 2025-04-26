@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import API from "../services/API";
+import axios from "axios";
 import Layout from "./shared/Layout/Layout";
 import { FaUser, FaUserFriends, FaPen } from "react-icons/fa";
 
@@ -15,7 +15,9 @@ const FeedbackForm = () => {
   useEffect(() => {
     const fetchDonors = async () => {
       try {
-        const response = await API.get("/feedback/donors-name");
+        const response = await axios.get(
+          "https://capstone-project-rk04.onrender.com/api/v1/feedback/donors-name"
+        );
         setDonors(response.data);
       } catch (error) {
         console.error("Error fetching donors:", error);
@@ -31,7 +33,10 @@ const FeedbackForm = () => {
     const feedback = { patientName: user?.name, donorName, description };
 
     try {
-      await API.post("/feedback/feedback-post", feedback);
+      await axios.post(
+        "https://capstone-project-rk04.onrender.com/api/v1/feedback/feedback-post",
+        feedback
+      );
       setDescription("");
       setDonorName("");
       setShowToast(true);

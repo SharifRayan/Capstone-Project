@@ -28,7 +28,9 @@ const PostList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://capstone-project-rk04.onrender.com/api/v1/blood-requests/${id}`);
+      await axios.delete(
+        `https://capstone-project-rk04.onrender.com/api/v1/blood-requests/${id}`
+      );
       setData((prevData) => prevData.filter((request) => request._id !== id));
     } catch (error) {
       console.error("Error deleting blood request:", error);

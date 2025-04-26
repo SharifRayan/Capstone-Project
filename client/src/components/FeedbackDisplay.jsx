@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import API from "../services/API";
-
+import axios from "axios";
 const FeedbackDisplay = () => {
   const [feedbacks, setFeedbacks] = useState([]);
 
   useEffect(() => {
     const fetchFeedbacks = async () => {
       try {
-        const response = await API.get("/feedback");
+        const response = await axios.get(
+          "https://capstone-project-rk04.onrender.com/api/v1/feedback"
+        );
         setFeedbacks(response.data);
       } catch (error) {
         console.error("Failed to load feedbacks:", error);

@@ -12,7 +12,7 @@ const Notifications = () => {
   const unreadCount = notifications.filter((n) => !n.read).length;
 
   useEffect(() => {
-    socketRef.current = io("http://localhost:8080");
+    socketRef.current = io("https://capstone-project-rk04.onrender.com");
     if (user?._id) socketRef.current.emit("joinNotifications", user._id);
     socketRef.current.on("newNotification", (newNotification) => {
       setNotifications((prev) => [newNotification, ...prev]);

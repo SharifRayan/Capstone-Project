@@ -22,7 +22,7 @@ const PatientList = () => {
 
   // Initialize socket connection
   useEffect(() => {
-    const newSocket = io("localhost:8080");
+    const newSocket = io("https://capstone-project-rk04.onrender.com");
     setSocket(newSocket);
     if (user) {
       newSocket.emit("join", { userId: user._id, userType: "donar" });
