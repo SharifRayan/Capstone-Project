@@ -11,7 +11,7 @@ const DonorList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/v1/donors")
+      .get("https://capstone-project-rk04.onrender.com/api/v1/donors")
       .then((response) => {
         setDonors(response.data);
       })
