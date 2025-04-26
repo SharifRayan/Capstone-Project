@@ -8,7 +8,7 @@ function BloodRequestsList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/v1/blood-requests")
+      .get("https://capstone-project-rk04.onrender.com/api/v1/blood-requests")
       .then((response) => {
         setRequests(response.data);
       })
