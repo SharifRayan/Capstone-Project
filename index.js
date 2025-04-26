@@ -16,8 +16,7 @@ dotenv.config();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://blood-bank-management-system-drab.vercel.app",
-  "https://blood-bank-management-system-e1vmac1nq-nuradnans-projects.vercel.app",
+  "https://capstone-project-gamma-two.vercel.app",
 ];
 
 // MongoDB connection
