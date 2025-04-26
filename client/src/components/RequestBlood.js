@@ -25,7 +25,7 @@ function RequestBlood() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/v1/blood-requests",
+        "https://capstone-project-rk04.onrender.com/api/v1/blood-requests",
         formData
       );
       console.log("Request Submitted:", res.data);
