@@ -16,7 +16,7 @@ dotenv.config();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://capstone-project-gamma-two.vercel.app",
+  "https://capstone-project-rk04.onrender.com",
 ];
 
 // MongoDB connection
